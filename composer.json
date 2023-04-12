@@ -1,0 +1,34 @@
+{
+  "name": "vscode/php-ioc",
+  "autoload": {
+    "psr-4": {
+      "Vscode\\PhpIoc\\": "src/"
+    }
+  },
+  "version": "0.1.0",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nandor Dudas",
+      "email": "nandor.dudas@gmail.com"
+    }
+  ],
+  "scripts": {
+    "dev": "php -S localhost:8081 -t ./public"
+  },
+  "require": {
+    "php": "^8.2",
+    "psr/container": "^2.0"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.15",
+    "symfony/var-dumper": "^6.2"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
